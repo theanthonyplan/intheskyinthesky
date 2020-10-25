@@ -5,11 +5,11 @@ import random
 # set some env vars
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ufo.settings")
 
-def populate_fake_records(count=1000):
+def populate_fake_records(count=60):
     print("Populating database with {} fake records.".format(count))
     records = []
 
-    for line in open('fake_records.txt', 'r'):
+    for line in open('fake_data.txt', 'r'):
         # now we are going to go through and load each line as json
         # and we will appaend it to our data list
         records.append(line)
@@ -26,7 +26,7 @@ def populate_fake_records(count=1000):
         Record.objects.get_or_create(summary=records[record_number], is_human=False)
         # input()
 
-def populate_real_records(count=1000):
+def populate_real_records(count=60):
     print("Populating database with {} real records.".format(count))
 
     records = []
@@ -51,7 +51,7 @@ def populate_real_records(count=1000):
 
 
 if __name__ == '__main__':
-    records_count = 1000
+    records_count = 60
     records_real = True
 
     # how many records should we set?  passed as a script arg
