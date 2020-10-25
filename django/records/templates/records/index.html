@@ -1,0 +1,12 @@
+{% if random_record %}
+    <p>{{ random_record.summary }}</p>
+    <a href="/records/{{ random_record.id }}/">Details</a>
+
+    <p>Who wrote this report?</p>
+    <a href='/records/{{ random_record.id }}/0/'>Bot</a>
+    <a href='/records/{{ random_record.id }}/1/'>Human</a>
+
+
+{% else %}
+    <p>No records are available.</p>
+{% endif %}

@@ -1,0 +1,67 @@
+
+<!--
+<!DOCTYPE HTML>
+<!--
+	Alpha by Gruxware
+	Gruxware.com | hello@Gruxware.com
+	License: Gruxware.com/license
+-->
+{% load static %}
+<html>
+	<head>
+		<title>Untitled</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/static/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body class="landing">
+		<div id="page-wrapper">
+
+
+		<!-- Main -->
+		<section id="main" class="container">
+
+			<section class="box major">
+        {% if record_details %}
+            <p>Id: {{ record_details.id }}</p>
+            <p>Summary {{ record_details.summary }}</p>
+            <p>Written by a human? {{ record_details.is_human }}</p>
+            <p>Correct votes: {{ record_details.correct_count }}</p>
+            <p>Incorrect votes{{ record_details.incorrect_count }}</p>
+            <a href="/">Give me another one!</a>
+
+        {% else %}
+            <p>No records are available.</p>
+        {% endif %}
+
+
+
+
+
+
+				</div>
+			</div>
+
+			</section>
+		</section>
+
+
+
+
+
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="/static/js/jquery.min.js"></script>
+			<script src="/static/js/jquery.dropotron.min.js"></script>
+			<script src="/static//js/jquery.scrollgress.min.js"></script>
+			<script src="/static/js/skel.min.js"></script>
+			<script src="/static/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/static/js/main.js"></script>
+
+	</body>
+</html> -->
